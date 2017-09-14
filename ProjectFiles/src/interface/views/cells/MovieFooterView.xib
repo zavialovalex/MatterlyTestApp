@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Kg-g5-CKr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7fa-Zs-ImJ">
+                            <rect key="frame" x="142" y="7" width="37" height="37"/>
+                            <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7fa-Zs-ImJ" firstAttribute="centerY" secondItem="6Kg-g5-CKr" secondAttribute="centerY" id="itf-hk-JZ3"/>
+                        <constraint firstItem="7fa-Zs-ImJ" firstAttribute="centerX" secondItem="6Kg-g5-CKr" secondAttribute="centerX" id="usd-in-sys"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6Kg-g5-CKr" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="CXc-Xd-E8k"/>
+                <constraint firstAttribute="bottom" secondItem="6Kg-g5-CKr" secondAttribute="bottom" id="UML-dw-2Bh"/>
+                <constraint firstAttribute="trailing" secondItem="6Kg-g5-CKr" secondAttribute="trailing" id="VQM-In-Xa7"/>
+                <constraint firstItem="6Kg-g5-CKr" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="xh5-rS-2wc"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+</document>

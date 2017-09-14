@@ -1,0 +1,24 @@
+PODS:
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - TMDBSwift (0.4.0)
+
+DEPENDENCIES:
+  - RxCocoa (~> 3)
+  - RxSwift (~> 3)
+  - SDWebImage (~> 4.1)
+  - TMDBSwift (~> 0.4)
+
+SPEC CHECKSUMS:
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  TMDBSwift: b2c22c59e63f3990212f373a93d054c1cdab85dc
+
+PODFILE CHECKSUM: fdcb78b4d93eb0e26b5b5bedbd365ebab23916b3
+
+COCOAPODS: 1.2.0

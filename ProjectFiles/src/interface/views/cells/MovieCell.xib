@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="Matterly_Test_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pay-iv-p6z">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="192"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxQ-U8-6RN">
+                                <rect key="frame" x="0.0" y="0.0" width="368" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="mO8-1r-tIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nmj-ae-Ui5" customClass="MImageView" customModule="Matterly_Test_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="31" width="368" height="161"/>
+                                <color key="backgroundColor" white="0.91159119897959184" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="K2U-IJ-ZhS">
+                                <rect key="frame" x="166" y="93" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nmj-ae-Ui5" secondAttribute="trailing" id="B9t-Me-eHg"/>
+                            <constraint firstItem="Nmj-ae-Ui5" firstAttribute="leading" secondItem="pay-iv-p6z" secondAttribute="leading" id="JfY-Fg-y3T"/>
+                            <constraint firstAttribute="bottom" secondItem="Nmj-ae-Ui5" secondAttribute="bottom" id="MqN-LW-p1v"/>
+                            <constraint firstItem="LxQ-U8-6RN" firstAttribute="top" secondItem="pay-iv-p6z" secondAttribute="top" id="OEg-Bj-NdY"/>
+                            <constraint firstItem="Nmj-ae-Ui5" firstAttribute="top" secondItem="LxQ-U8-6RN" secondAttribute="bottom" constant="8" id="Z9P-gg-D76"/>
+                            <constraint firstItem="K2U-IJ-ZhS" firstAttribute="centerX" secondItem="Nmj-ae-Ui5" secondAttribute="centerX" id="dez-Ne-m0b"/>
+                            <constraint firstItem="K2U-IJ-ZhS" firstAttribute="centerY" secondItem="Nmj-ae-Ui5" secondAttribute="centerY" id="iNK-rT-IRU"/>
+                            <constraint firstItem="LxQ-U8-6RN" firstAttribute="leading" secondItem="pay-iv-p6z" secondAttribute="leading" id="ipH-pk-Xia"/>
+                            <constraint firstAttribute="trailing" secondItem="LxQ-U8-6RN" secondAttribute="trailing" id="roP-29-nGz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pay-iv-p6z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QkN-kc-XoJ"/>
+                <constraint firstAttribute="trailing" secondItem="pay-iv-p6z" secondAttribute="trailing" id="hmr-z7-Y9f"/>
+                <constraint firstItem="pay-iv-p6z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lYy-OH-lXg"/>
+                <constraint firstAttribute="bottom" secondItem="pay-iv-p6z" secondAttribute="bottom" id="ote-cG-liE"/>
+            </constraints>
+            <size key="customSize" width="368" height="192"/>
+            <connections>
+                <outlet property="activityIndicator" destination="K2U-IJ-ZhS" id="qQI-vO-jYf"/>
+                <outlet property="moviePreviewView" destination="Nmj-ae-Ui5" id="KjM-kC-MFG"/>
+                <outlet property="movieTitleView" destination="LxQ-U8-6RN" id="z7M-yp-lsW"/>
+            </connections>
+            <point key="canvasLocation" x="-155" y="85"/>
+        </collectionViewCell>
+    </objects>
+</document>
